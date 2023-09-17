@@ -1,9 +1,7 @@
-import { Button } from "@/components/ui/button";
+import React from "react";
 
-export default function Home() {
-	return (
-		<main className='flex min-h-screen flex-col items-center justify-between p-24'>
-			<Button size='sm'>Sign up</Button>
-		</main>
-	);
-}
+const HomePage = () => {
+	return <main className='min-h-[calc(100vh_-_145px)]'>HomePage</main>;
+};
+
+export default HomePage;
