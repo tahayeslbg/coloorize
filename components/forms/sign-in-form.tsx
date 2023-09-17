@@ -18,9 +18,7 @@ import Icons from "../ui/icons";
 import GoogleButton from "../google-button";
 
 const formSchema = z.object({
-	emailAddress: z.string().min(2, {
-		message: "Fullname must be at least 2 characters.",
-	}),
+	emailAddress: z.string().email({ message: "Email address must be valid" }),
 });
 
 const SigninForm = () => {
